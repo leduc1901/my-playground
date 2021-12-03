@@ -3,16 +3,11 @@ import * as THREE from "three";
 import React, { useEffect, useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
-import { a as three, Interpolation } from "@react-spring/three";
-
-type ModelProps = {
-  open: boolean;
-  hinge: Interpolation<number, 1.575 | -0.425>;
-};
+import { a as three } from "@react-spring/three";
 
 const vec = new THREE.Vector3();
 
-function Laptop({ open, hinge, ...props }: ModelProps) {
+function Laptop({ open, hinge, ...props }) {
   const group = useRef<React.ReactNode>();
   // Load model
   const { nodes, materials } = useGLTF("/mac-draco.glb", true);

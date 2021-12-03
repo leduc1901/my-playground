@@ -1,7 +1,8 @@
+import type { SpringValue } from "@react-spring/three";
 import React, { FC, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Environment, ContactShadows } from "@react-three/drei";
-import { a as three, SpringValue } from "@react-spring/three";
+import { a as three } from "@react-spring/three";
 import Laptop from "../../models/Laptop";
 import { a as animate } from "@react-spring/web";
 
