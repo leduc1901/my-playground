@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { SpringValue } from "@react-spring/three";
 import React, { FC, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
@@ -12,11 +13,7 @@ type FloatingLaptopProps = {
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const FloatingLaptop: FC<FloatingLaptopProps> = ({
-  openProps,
-  open,
-  setOpen,
-}: FloatingLaptopProps) => {
+function FloatingLaptop({ openProps, open, setOpen }: FloatingLaptopProps) {
   return (
     <animate.div
       style={{
@@ -146,6 +143,6 @@ const FloatingLaptop: FC<FloatingLaptopProps> = ({
       </Canvas>
     </animate.div>
   );
-};
+}
 
 export default FloatingLaptop;
