@@ -18,6 +18,7 @@ main,
 body {
   font-family: inter;
   color: black;
+  overflow-x: hidden;
 }
 
 .home-page-header {
